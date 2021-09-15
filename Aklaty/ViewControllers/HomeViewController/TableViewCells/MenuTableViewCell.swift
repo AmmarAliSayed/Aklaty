@@ -81,16 +81,16 @@ extension MenuTableViewCell: UICollectionViewDelegate, UICollectionViewDataSourc
 
 extension MenuTableViewCell: UICollectionViewDelegateFlowLayout {
     
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//
-//        let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
-//        let availableWidth = contentView.frame.width - paddingSpace
-//        let withPerItem = (availableWidth / itemsPerRow )/1.2
-//
-//        return CGSize(width: withPerItem, height: 170)
-//     //   return CGSize(width: 100, height: 100)
-//
-//    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+
+        let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
+        let availableWidth = contentView.frame.width - paddingSpace
+        let withPerItem = (availableWidth / itemsPerRow )/1.2
+
+        return CGSize(width: withPerItem, height: 190)
+     //   return CGSize(width: 100, height: 100)
+
+    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         

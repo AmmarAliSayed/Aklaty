@@ -536,8 +536,8 @@
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="ddddddddddddddddddddd" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxr-um-w80">
-                                                                                <rect key="frame" x="4" y="127" width="144" height="51"/>
-                                                                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="18"/>
+                                                                                <rect key="frame" x="0.0" y="127" width="152" height="51"/>
+                                                                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="16"/>
                                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
@@ -546,7 +546,7 @@
                                                                         <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
                                                                             <constraint firstItem="ICp-3M-wEI" firstAttribute="leading" secondItem="jz1-WR-jW0" secondAttribute="leading" constant="4" id="7Ss-hp-LPS"/>
-                                                                            <constraint firstItem="fxr-um-w80" firstAttribute="leading" secondItem="jz1-WR-jW0" secondAttribute="leading" constant="4" id="HCX-wl-tCo"/>
+                                                                            <constraint firstItem="fxr-um-w80" firstAttribute="leading" secondItem="jz1-WR-jW0" secondAttribute="leading" id="HCX-wl-tCo"/>
                                                                             <constraint firstAttribute="trailing" secondItem="ICp-3M-wEI" secondAttribute="trailing" constant="4" id="Phz-oX-eBy"/>
                                                                             <constraint firstAttribute="bottom" secondItem="fxr-um-w80" secondAttribute="bottom" constant="8" id="QdJ-85-hdW"/>
                                                                             <constraint firstItem="fxr-um-w80" firstAttribute="top" secondItem="clB-C3-Afx" secondAttribute="bottom" id="Sjh-hH-yfm"/>
@@ -555,7 +555,7 @@
                                                                             <constraint firstAttribute="trailing" secondItem="clB-C3-Afx" secondAttribute="trailing" id="a9B-yU-Kym"/>
                                                                             <constraint firstItem="ICp-3M-wEI" firstAttribute="top" secondItem="jz1-WR-jW0" secondAttribute="top" constant="4" id="bkb-ic-pYT"/>
                                                                             <constraint firstItem="ICp-3M-wEI" firstAttribute="height" secondItem="jz1-WR-jW0" secondAttribute="height" multiplier="0.5" id="eRH-nD-vre"/>
-                                                                            <constraint firstAttribute="trailing" secondItem="fxr-um-w80" secondAttribute="trailing" constant="4" id="lw9-Dq-kkC"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="fxr-um-w80" secondAttribute="trailing" id="lw9-Dq-kkC"/>
                                                                         </constraints>
                                                                     </view>
                                                                 </subviews>
@@ -1419,14 +1419,14 @@ on Foodie Fridays</string>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="p8a-Vf-1Sd" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="zdx-FE-0Xc"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AuK-g4-Uva" customClass="RollingPitTabBar" customModule="VBRRollingPit">
+                    <tabBar key="tabBar" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" id="AuK-g4-Uva" customClass="RollingPitTabBar" customModule="VBRRollingPit">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" name="mainColor"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="marginBottom">
-                                <real key="value" value="20"/>
+                                <real key="value" value="10"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="color" keyPath="circleBackColor">
                                 <color key="value" name="grayBackground"/>
@@ -3532,7 +3532,7 @@ on Foodie Fridays</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Xlq-PS-qnS">
-                                <rect key="frame" x="0.0" y="424.5" width="414" height="224"/>
+                                <rect key="frame" x="0.0" y="428.5" width="414" height="224"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d78-wn-jWy">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
@@ -3562,24 +3562,24 @@ on Foodie Fridays</string>
                                 <color key="backgroundColor" name="secondColor"/>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BBF-Hs-6b8">
-                                <rect key="frame" x="0.0" y="88" width="414" height="269"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="304.5"/>
                                 <color key="backgroundColor" name="secondColor"/>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="Z4v-ev-qxE">
-                                <rect key="frame" x="132" y="148.5" width="150" height="150"/>
+                                <rect key="frame" x="132" y="166.5" width="150" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="4wp-QF-0XH"/>
-                                    <constraint firstAttribute="width" constant="150" id="L9w-ci-4Vr"/>
+                                    <constraint firstAttribute="height" constant="150" id="TnI-dx-7Xm"/>
+                                    <constraint firstAttribute="width" constant="150" id="vSo-c5-Igl"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xfl-1B-cEc">
-                                <rect key="frame" x="20" y="306.5" width="374" height="33"/>
+                                <rect key="frame" x="20" y="320.5" width="374" height="33"/>
                                 <fontDescription key="fontDescription" name="Avenir-HeavyOblique" family="Avenir" pointSize="24"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGX-F9-vEt">
-                                <rect key="frame" x="50" y="698.5" width="314" height="53.5"/>
+                                <rect key="frame" x="50" y="687.5" width="314" height="54"/>
                                 <color key="backgroundColor" name="secondColor"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
                                 <state key="normal" title="Log out">
@@ -3599,20 +3599,20 @@ on Foodie Fridays</string>
                         <color key="backgroundColor" name="mainColor"/>
                         <constraints>
                             <constraint firstItem="cGX-F9-vEt" firstAttribute="leading" secondItem="oIb-Rv-tz3" secondAttribute="leading" constant="50" id="6e1-fN-6bC"/>
-                            <constraint firstItem="BBF-Hs-6b8" firstAttribute="height" secondItem="qia-rv-ffW" secondAttribute="height" multiplier="0.3" id="6u6-XL-Byl"/>
+                            <constraint firstItem="BBF-Hs-6b8" firstAttribute="height" secondItem="qia-rv-ffW" secondAttribute="height" multiplier="0.34" id="6u6-XL-Byl"/>
                             <constraint firstItem="BBF-Hs-6b8" firstAttribute="top" secondItem="oIb-Rv-tz3" secondAttribute="top" id="AkA-Fu-RWW"/>
                             <constraint firstItem="Xlq-PS-qnS" firstAttribute="leading" secondItem="oIb-Rv-tz3" secondAttribute="leading" id="Bm3-BB-x7i"/>
-                            <constraint firstItem="Xfl-1B-cEc" firstAttribute="top" secondItem="Z4v-ev-qxE" secondAttribute="bottom" constant="8" id="HYq-kM-TK9"/>
+                            <constraint firstItem="Xfl-1B-cEc" firstAttribute="top" secondItem="Z4v-ev-qxE" secondAttribute="bottom" constant="4" id="HYq-kM-TK9"/>
                             <constraint firstItem="Z4v-ev-qxE" firstAttribute="centerX" secondItem="BBF-Hs-6b8" secondAttribute="centerX" id="K72-tc-7lT"/>
                             <constraint firstItem="cGX-F9-vEt" firstAttribute="height" secondItem="qia-rv-ffW" secondAttribute="height" multiplier="0.06" id="Oi7-uT-0mE"/>
                             <constraint firstItem="Xlq-PS-qnS" firstAttribute="height" secondItem="qia-rv-ffW" secondAttribute="height" multiplier="0.25" id="QOu-WW-GJx"/>
                             <constraint firstItem="oIb-Rv-tz3" firstAttribute="trailing" secondItem="BBF-Hs-6b8" secondAttribute="trailing" id="Qt4-lg-hiu"/>
                             <constraint firstItem="BBF-Hs-6b8" firstAttribute="leading" secondItem="oIb-Rv-tz3" secondAttribute="leading" id="T8t-ym-f2X"/>
-                            <constraint firstItem="cGX-F9-vEt" firstAttribute="top" secondItem="Xlq-PS-qnS" secondAttribute="bottom" constant="50" id="VTZ-p0-3TV"/>
+                            <constraint firstItem="cGX-F9-vEt" firstAttribute="top" secondItem="Xlq-PS-qnS" secondAttribute="bottom" constant="35" id="VTZ-p0-3TV"/>
+                            <constraint firstItem="Xlq-PS-qnS" firstAttribute="top" secondItem="BBF-Hs-6b8" secondAttribute="bottom" constant="36" id="gBg-6R-oCH"/>
                             <constraint firstItem="Xfl-1B-cEc" firstAttribute="leading" secondItem="oIb-Rv-tz3" secondAttribute="leading" constant="20" id="jip-tZ-xJf"/>
                             <constraint firstItem="oIb-Rv-tz3" firstAttribute="trailing" secondItem="cGX-F9-vEt" secondAttribute="trailing" constant="50" id="oyE-2V-YYg"/>
                             <constraint firstItem="Z4v-ev-qxE" firstAttribute="centerY" secondItem="BBF-Hs-6b8" secondAttribute="centerY" constant="1" id="sGi-hL-zJO"/>
-                            <constraint firstItem="Xlq-PS-qnS" firstAttribute="top" secondItem="Xfl-1B-cEc" secondAttribute="bottom" constant="85" id="t6t-yc-bLB"/>
                             <constraint firstItem="oIb-Rv-tz3" firstAttribute="trailing" secondItem="Xfl-1B-cEc" secondAttribute="trailing" constant="20" id="yoG-kP-2j2"/>
                             <constraint firstItem="oIb-Rv-tz3" firstAttribute="trailing" secondItem="Xlq-PS-qnS" secondAttribute="trailing" id="z9O-AO-jaL"/>
                         </constraints>
@@ -3711,10 +3711,7 @@ on Foodie Fridays</string>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Upf-1h-e3m">
-                                        <rect key="frame" x="248" y="160" width="54" height="48"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="952-lL-KWL"/>
-                                        </constraints>
+                                        <rect key="frame" x="248" y="160" width="66" height="51.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="tintColor" name="mainColor"/>
                                         <state key="normal" backgroundImage="camera.fill" catalog="system"/>
@@ -3726,7 +3723,8 @@ on Foodie Fridays</string>
                                 <color key="backgroundColor" name="secondColor"/>
                                 <constraints>
                                     <constraint firstItem="Upf-1h-e3m" firstAttribute="leading" secondItem="v7z-c4-9Ud" secondAttribute="leading" constant="248" id="BGW-Ny-Dee"/>
-                                    <constraint firstAttribute="trailing" secondItem="Upf-1h-e3m" secondAttribute="trailing" constant="112" id="Ie5-FM-yLB"/>
+                                    <constraint firstAttribute="trailing" secondItem="Upf-1h-e3m" secondAttribute="trailing" constant="100" id="Ie5-FM-yLB"/>
+                                    <constraint firstItem="Upf-1h-e3m" firstAttribute="height" secondItem="v7z-c4-9Ud" secondAttribute="height" multiplier="0.2" id="LBA-Ic-RDl"/>
                                     <constraint firstItem="8Tf-M7-fgv" firstAttribute="centerY" secondItem="v7z-c4-9Ud" secondAttribute="centerY" id="TFl-xN-auz"/>
                                     <constraint firstItem="Upf-1h-e3m" firstAttribute="top" secondItem="8Tf-M7-fgv" secondAttribute="top" constant="100" id="caP-md-Nta"/>
                                     <constraint firstItem="8Tf-M7-fgv" firstAttribute="centerX" secondItem="v7z-c4-9Ud" secondAttribute="centerX" id="fnL-pH-ho3"/>

@@ -33,7 +33,9 @@ class FreeDeliveryItemDetailsViewController: UIViewController {
         
         //MARK: - Vars
         var itemReviews :[Review] = []
+        var userImages : [String] = []
         var itemDetailsViewModel : FreeDeliveryOfferDetailsViewModel!
+        var userDetailsViewModel : UserDetailsViewModel!
         var orderNum :Int = 1
         var newPrice :Double = 0.0
         var oldPrice :Double = 0.0
@@ -59,6 +61,13 @@ class FreeDeliveryItemDetailsViewController: UIViewController {
         }
         
     }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        userDetailsViewModel = UserDetailsViewModel()
+        userDetailsViewModel.bindUserDetailsViewModelToView = {
+           self.addUserImage()
+           }
+        }
     //MARK: - IBActions
      @IBAction func orderButtonPressed(_ sender: Any) {
          
@@ -141,10 +150,14 @@ class FreeDeliveryItemDetailsViewController: UIViewController {
          review.id = id
          review.itemId = itemDetailsViewModel.itemData.id
          review.body = reviewBody
-         review.userImageLinks = []
+         //review.userImageLinks = []
+        review.userImageLinks = userImages
          reviewTextField.text = ""
         itemDetailsViewModel.addNewReview(review: review)
      }
+    private func addUserImage(){
+       userImages = userDetailsViewModel.userData.imageLinks
+    }
      private func showRequiredFieldsAlert(){
          hud.textLabel.text = "Enter a new Review!"
          hud.indicatorView = JGProgressHUDErrorIndicatorView()
@@ -173,6 +186,16 @@ extension FreeDeliveryItemDetailsViewController : UITableViewDelegate , UITableV
             }
         Utilities.makeViewRounded(view: cell.cellView, cornerRadius:20, color: #colorLiteral(red: 0.9750739932, green: 0.9750967622, blue: 0.9750844836, alpha: 1))
         cell.userReviewLabel.text = itemReviews[indexPath.row].body
+        
+        cell.userImageView.layer.cornerRadius = cell.userImageView.frame.size.width/2
+        cell.userImageView.layer.masksToBounds = true
+        if (itemReviews[indexPath.row].userImageLinks.count) > 0 {
+            downloadImagesFromFirebase(imageUrls:[(itemReviews[indexPath.row].userImageLinks.first!)]) { (images) in
+                DispatchQueue.main.async {
+                    cell.userImageView.image = images.first as? UIImage
+                }
+            }
+        }
           return cell
         
     }
